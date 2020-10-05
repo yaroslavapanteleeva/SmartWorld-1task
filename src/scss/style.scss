@@ -1,0 +1,27 @@
+@import 'libs/bootstrap-reboot.min.scss';
+@import 'libs/fonts';
+
+@import 'base/variables.scss';
+@import 'base/mixins.scss';
+
+@import 'blocks/home.scss';
+@import 'blocks/header.scss';
+@import 'blocks/buttons.scss';
+@import 'blocks/heading.scss';
+
+* {
+    font-family: $font-main;
+}
+
+@import 'blocks/home.scss';
+@import 'blocks/header.scss';
+@import 'blocks/buttons.scss';
+
+* {
+    font-family: $font-main;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}

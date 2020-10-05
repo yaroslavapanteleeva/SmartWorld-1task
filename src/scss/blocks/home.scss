@@ -1,0 +1,32 @@
+@import '../base/mixins.scss';
+
+@import '../base/mixins.scss';
+
+.home {
+    max-width: 1920px;
+    min-height: 1040px;
+    margin: 0 auto;
+    padding: 0 140px;
+    background-color: #f5fcfd;
+    background: url(../img/bg_wave.png) center (center/cover) no-repeat;
+    &__text {
+        @include text;
+        width: 611px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 32px;
+    }
+    &__btn {
+        margin: 0 auto;
+        margin-top: 37px;
+        width: 360px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__device {
+        margin-top: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
