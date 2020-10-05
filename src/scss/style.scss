@@ -8,14 +8,7 @@
 @import 'blocks/header.scss';
 @import 'blocks/buttons.scss';
 @import 'blocks/heading.scss';
-
-* {
-    font-family: $font-main;
-}
-
-@import 'blocks/home.scss';
-@import 'blocks/header.scss';
-@import 'blocks/buttons.scss';
+@import 'blocks/features.scss';
 
 * {
     font-family: $font-main;

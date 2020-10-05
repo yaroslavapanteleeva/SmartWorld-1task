@@ -4,3 +4,10 @@
     font-weight: 400;
     line-height: 27px;
 }
+
+@mixin title {
+    color: #333333;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+}
