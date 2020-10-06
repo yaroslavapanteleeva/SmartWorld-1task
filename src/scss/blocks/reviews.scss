@@ -1,0 +1,43 @@
+.reviews {
+    max-width: 1920px;
+    margin: 0 auto;
+    min-height: 608px;
+    background-color: #f5fcfd;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* &__img {
+        background: url('../img/bg_people.png') center center/cover no-repeat;
+    } */
+    &__info {
+        
+    }
+    &__slider {
+        width: 1040px;
+        position: relative;
+        overflow: hidden;
+    }
+    &__item {
+        width: 360px;
+        height: 215px;
+        box-shadow: 0 0 25px rgba(165, 165, 165, 0.1);
+        border-radius: 5px;
+        background-color: black;
+        /* position: absolute;
+        left: 0;
+        top: 0;
+        transition: all ease 1s; */
+        
+
+    }
+    .line {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 30px;
+        height: 215px;
+        position: relative;
+        overflow: hidden;
+        left: 0;
+        right: 0;
+        transition: all ease 1s;
+    }
+}
