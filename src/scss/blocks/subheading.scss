@@ -1,0 +1,19 @@
+.subheading {
+    color: #333333;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 36px;
+    margin-bottom: 0;
+    &_design {
+        position: relative;
+        text-align: center;
+        z-index: 1;
+        &::after {
+            content: url('../img/icon/icon_line.svg');
+            position: absolute;
+            left: 45%;
+            top: -14px;
+            z-index: -1;
+        }
+    }
+}

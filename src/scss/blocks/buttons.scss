@@ -1,7 +1,5 @@
 @import '../base/variables.scss';
 
-@import '../base/variables.scss';
-
 .btn {
     width: 165px;
     height: 50px;
@@ -17,11 +15,18 @@
     &_left {
         background-color: $color-main;
         text-transform: none;
+        &_br {
+            border-radius: 25px 0 0 25px;
+        }
+
     }
     &_right {
         background-color: #fff;
         border: 2px solid $color-main;
         color: $color-main;
         text-transform: none;
+        &_br {
+            border-radius: 0 25px 25px 0;
+        }
     }
 }
