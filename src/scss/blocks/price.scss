@@ -1,0 +1,93 @@
+.price {
+    max-width: 1990px;
+    padding: 130px 0;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+    }
+    &__block-plan {
+        align-self: center;
+    }
+    &__descr {
+        color: #929292;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 27px;
+        margin: 33px 0 37px;
+    }
+    &__btn {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    &__item {
+        padding: 40px 0;
+        min-height: 576px;
+        box-shadow: 0 0 68px rgba(165, 165, 165, 0.25);
+        border-radius: 5px;
+        background-color: #ffffff;
+    }
+    &__round {
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        background-color: #dfedff;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__round-mini {
+        width: 75px;
+        height: 75px;
+        background-color: #cfe4fe;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__title {
+        padding-top: 30px;
+        color: #333333;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        text-align: center;
+    }
+    hr {
+        width: 165px;
+        height: 1px;
+        background-color: #e0e0e0;
+        margin: 30px auto;
+        border: none;
+    }
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 27px;
+        text-align: center;
+        li {
+            color: #929292;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 27px;
+        }
+    }
+    &__prices {
+        color: #0f7bff;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 36px;
+        text-align: center;
+        margin-bottom: 37px;
+        span {
+            font-size: 16px;
+        }
+    }
+    &__btn-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
