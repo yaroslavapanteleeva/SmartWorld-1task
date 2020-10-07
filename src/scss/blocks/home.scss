@@ -1,13 +1,13 @@
 @import '../base/mixins.scss';
 
-
 .home {
+    position: relative;
     max-width: 1920px;
     min-height: 1040px;
     margin: 0 auto;
     padding: 0 140px;
-    background-color: #f5fcfd;
     background: url(../img/bg_wave.png) center (center/cover) no-repeat;
+    background-color: #f5fcfd;
     &__text {
         @include text;
         width: 611px;
@@ -22,10 +22,24 @@
         display: flex;
         justify-content: space-between;
     }
-    &__device {
+    &__img-device {
         margin-top: 24px;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    &__scroll {
+        position: absolute;
+        left: 50%;
+        top: 97%;
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #dcdcdc;
+        background-color: #ffffff;
+        cursor: pointer;
     }
 }

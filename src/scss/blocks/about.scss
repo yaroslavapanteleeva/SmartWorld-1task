@@ -53,16 +53,27 @@
         }
     }
     &__title {
-        margin-top: 226px;
         margin-bottom: 0;
     }
     &__descr {
         grid-column: 4/6;
+        &_top {
+            margin-top: 226px;
+        }
         &_bottom {
+            margin-top: 145px;
+            justify-self: end;
             grid-column: 1/3;
             grid-row: 2/3;
             
         }
+    }
+    &__text {
+        @include text;
+        max-width: 544px;
+        margin-top: 25px;
+        margin-bottom: 28px;
+        
     }
     
 }

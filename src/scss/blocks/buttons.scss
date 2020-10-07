@@ -11,10 +11,21 @@
     font-weight: 700;
     line-height: 27px;
     text-transform: uppercase;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        background-color: $color-main;
+    }
 
     &_left {
         background-color: $color-main;
         text-transform: none;
+        &:hover {
+            background-color: #fff;
+            border: 2px solid $color-main;
+            color: $color-main;
+        }
         &_br {
             border-radius: 25px 0 0 25px;
         }
@@ -25,6 +36,10 @@
         border: 2px solid $color-main;
         color: $color-main;
         text-transform: none;
+        &:hover {
+            background-color: $color-main;
+            color: #fff;
+        }
         &_br {
             border-radius: 0 25px 25px 0;
         }
