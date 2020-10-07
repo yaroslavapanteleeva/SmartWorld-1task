@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AppSon</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
     <section class="home">
@@ -12,7 +11,7 @@
             <a href="#" class="header__logo">AppSon</a>
             <nav>
                 <ul class="menu">
-                    <li class="menu__item"><a href="#" class="menu__link active">Home</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link menu__link_active">Home</a></li>
                     <li class="menu__item"><a href="#" class="menu__link">Features</a></li>
                     <li class="menu__item"><a href="#" class="menu__link">Pricing</a></li>
                     <li class="menu__item"><a href="#" class="menu__link">Pages</a></li>
@@ -21,7 +20,7 @@
             <button class="header__btn btn">sign up</button>
         </header>
         <div class="container">
-            <h1 class="heading heading_margin">Best Desktop App for You</h1>
+            <h1 class="heading heading_indent_m">Best Desktop App for You</h1>
             <p class="home__text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
@@ -29,8 +28,11 @@
                 <button class="btn btn_left">Download</button>
                 <button class="btn btn_right">Free Trial</button>
             </div>
-            <div class="home__device">
+            <div class="home__img-device">
                 <img src="img/device.png" alt="device">
+            </div>
+            <div class="home__scroll">
+                <img src="img/icon/icon_arrow-main.svg" alt="arrow-scroll">
             </div>
         </div>
         
@@ -40,7 +42,7 @@
         <div class="container">
             <div class="features__items">
                 <div class="features__item">
-                    <div class="features__round features__round_color1"><img src="img/icon/analytic.svg" alt="analysis"></div>
+                    <div class="features__round features__round_bc_1"><img src="img/icon/analytic.svg" alt="analysis"></div>
                     <div class="feaatures__descr">
                         <div class="features__title">Analysis</div>
                         <div class="features__text">
@@ -49,7 +51,7 @@
                     </div>
                 </div>
                 <div class="features__item">
-                    <div class="features__round features__round_color2"><img src="img/icon/design.svg" alt="design"></div>
+                    <div class="features__round features__round_bc_2"><img src="img/icon/design.svg" alt="design"></div>
                     <div class="feaatures__descr">
                         <div class="features__title">Clean Design</div>
                         <div class="features__text">
@@ -58,7 +60,7 @@
                     </div>
                 </div>
                 <div class="features__item">
-                    <div class="features__round features__round_color3"><img src="img/icon/messag.svg" alt="messaging"></div>
+                    <div class="features__round features__round_bc_3"><img src="img/icon/messag.svg" alt="messaging"></div>
                     <div class="feaatures__descr">
                         <div class="features__title">Messaging</div>
                         <div class="features__text">
@@ -74,15 +76,14 @@
         <div class="about__container">
             <div class="about__rect-content">
                 <div class="about__rect about__rect_top"></div>
-                
                 <div class="about__img about__img_top">
-                    <img src="img/people1.png" alt="">
+                    <img src="img/people1.png" alt="people1">
                 </div>
                 <div class="about__img about__img_bottom">
-                    <img src="img/people2.png" alt="">
+                    <img src="img/people2.png" alt="people2">
                 </div> 
             </div>
-            <div class="about__descr">
+            <div class="about__descr about__descr_top">
                 <h2 class="about__title subheading">Easy Messaging</h2>
                 <div class="about__text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -118,11 +119,12 @@
     <section class="work">
         <div class="container">
             <h2 class="subheading subheading_design">How Does It Works?</h2>
-            <p class="work__text-sub">
+            <p class="work__lead-text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore <br> et dolore magna aliqua. Lorem ipsum dolor sit amet.
             </p>
             <div class="work__items">
-                <div class="work__item">
+                <div class="work__line"></div>
+                <div class="work__item ">
                     <div class="work__round"><img src="img/icon/account.svg" alt="account"></div>
                     <div class="work__descr">
                         <div class="work__title">Create An Account</div>
@@ -153,60 +155,60 @@
         </div>
     </section>
 
-    <section class="price">
+    <section class="tariff-plan">
         <div class="container">
-            <div class="price__wrapper">
-                <div class="price__block-plan">
+            <div class="tariff-plan__wrapper">
+                <div class="tariff-plan__block-plan">
                     <h2 class="subheading">Pricing Plan</h2>
-                    <div class="price__descr">
+                    <p class="tariff-plan__lead-text">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
-                    </div>
-                    <div class="price__btn">
+                    </p>
+                    <div class="tariff-plan__btn">
                         <button class="btn btn_left btn_left_br">Montnly</button>
-                    <button class="btn btn_right btn_right_br">Yearly</button>
+                        <button class="btn btn_right btn_right_br">Yearly</button>
                     </div>
                 </div>
-                <div class="price__item">
-                    <div class="price__round">
-                        <div class="price__round-mini">
+                <div class="tariff-plan__item">
+                    <div class="tariff-plan__round">
+                        <div class="tariff-plan__round-mini">
                             <img src="img/icon/icon_teleg.svg" alt="">
                         </div>
                     </div>
-                    <div class="price__title">Standard</div>
+                    <div class="tariff-plan__title">Standard</div>
                     <hr>
-                    <ul class="price__list">
+                    <ul class="tariff-plan__list">
                         <li>2gb Hosting</li>
                         <li>10 Custom Domain</li>
                         <li>SSD Hosting</li>
                         <li>50 gb Bandwith</li>
                         <li>Free Support</li>
                     </ul>
-                    <div class="price__prices price__prices-standart">
+                    <div class="tariff-plan__prices tariff-plan__prices-standart">
                         <span>$</span>19.00
                     </div>
-                    <div class="price__btn-card">
+                    <div class="tariff-plan__btn-card">
                         <button class="btn btn_left">Try Now</button>
                     </div>
                 </div>
-                <div class="price__item">
-                    <div class="price__round">
-                        <div class="price__round-mini">
+                <div class="tariff-plan__item">
+                    <div class="tariff-plan__round">
+                        <div class="tariff-plan__round-mini">
                             <img src="img/icon/icon_racet.svg" alt="">
                         </div>
                     </div>
-                    <div class="price__title">Premium</div>
+                    <div class="tariff-plan__title">Premium</div>
                     <hr>
-                    <ul class="price__list">
+                    <ul class="tariff-plan__list">
                         <li>2gb Hosting</li>
                         <li>10 Custom Domain</li>
                         <li>SSD Hosting</li>
                         <li>50 gb Bandwith</li>
                         <li>Free Support</li>
                     </ul>
-                    <div class="price__prices price__prices-premium">
+                    <div class="tariff-plan__prices tariff-plan__prices-premium">
                         <span>$</span>49.00
                     </div>
-                    <div class="price__btn-card">
+                    <div class="tariff-plan__btn-card">
                         <button class="btn btn_right">Try Now</button>
                     </div>
                 </div>
@@ -234,74 +236,111 @@
     <section class="news">
         <div class="container">
             <h2 class="subheading subheading_design">Latest News From Us</h2>
-            <p class="work__text-sub">
+            <p class="news__lead-text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore <br> et dolore magna aliqua. Lorem ipsum dolor sit amet.
             </p>
             <div class="news__items">
-                <div class="news__item-main">
-                    <div class="news__img"><img src="img/fire.png" alt=""></div>
-                    <div class="news__descr">
-                        <div class="news__item-title news__item-title_active">
-                            The master bedroom suite is phenomenally
-                            spacious
-                        </div>
-                        <div class="news__item-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                        </div>
-                        <a href="#" class="news__item-link">Continue Reading</a>
-                    </div>
 
+                <div class="news__img-main">
+                    <img src="img/fire.png" alt="fire">
                 </div>
-                <div class="news__item">
-                    <div class="news__img"><img src="img/newspaper.png" alt=""></div>
-                    <div class="news__descr">
-                        <div class="news__item-title">
-                            The master bedroom suite is phenomenally
-                            spacious
-                        </div>
-                        <div class="news__item-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
-                        </div>
+
+                <div class="news__descr-main">
+                    <div class="news__title-main">
+                        The master bedroom suite is phenomenally
+                        spacious
+                    </div>
+                    <div class="news__text-main">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                    </div>
+                    <a href="#" class="link">Continue Reading</a>
+                </div>
+
+                <div class="news__img"><img src="img/newspaper.png" alt="newspaper"></div>
+                <div class="news__descr">
+                    <div class="news__title">
+                        The master bedroom suite is phenomey spacious
+                    </div>
+                    <div class="news__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
                     </div>
                 </div>
-                <div class="news__item">
-                    <div class="news__img"><img src="img/directors.png" alt=""></div>
-                    <div class="news__descr">
-                        <div class="news__item-title">
-                            The master bedroom suite is phenomenally
-                            spacious
-                        </div>
-                        <div class="news__item-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
-                        </div>
+
+            
+                <div class="news__img"><img src="img/directors.png" alt="directors"></div>
+                <div class="news__descr">
+                    <div class="news__title">
+                        The master bedroom suite is phenomey spacious
+                    </div>
+                    <div class="news__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
                     </div>
                 </div>
-                <div class="news__item">
-                    <div class="news__img"><img src="img/read.png" alt=""></div>
-                    <div class="news__descr">
-                        <div class="news__item-title">
-                            The master bedroom suite is phenomenally
-                            spacious
-                        </div>
-                        <div class="news__item-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
-                        </div>
+              
+               
+                <div class="news__img"><img src="img/read.png" alt="read"></div>
+                <div class="news__descr">
+                    <div class="news__title">
+                        The master bedroom suite is phenomey spacious
+                    </div>
+                    <div class="news__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
                     </div>
                 </div>
+                
             </div>
         </div>
     </section>
 
     <div class="sentence">
         <div class="container">
-            <h2 class="subheading">Try 30 Days Free Trial</h2>
-            p.
+            <div class="sentence__wrapper">
+                <div class="sentense__descr">
+                    <h2 class="subheading">Try 30 Days Free Trial</h2>
+                    <p class="sentence__lead-text">No credit card required</p>
+                </div>
+                <button class="sentence__btn"><a href="#" class="link link_color">Get Started</a></button>
+            </div>
 
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <footer class="footer">
+        <div class="footer__widget">
+            <a href="#" class="footer__logo">AppSon</a>
+            <div class="footer__subs">
+                <input type="email" name="email" class="footer__input" placeholder="Enter Your Email">
+                <button class="footer_btn">SUBSCRIBE</button>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="footer__info">
+                <div class="footer__copyright">© 2018 Copyright, All Rights Reserved by AppSon</div>
+                <div class="footer__link">
+                    <a href="#">Terms & Condition</a>
+                    <a href="#">Privacy Policy </a>
+                    <a href="#">Help</a>
+                </div>
+                <div class="footer__social-link">
+                    <a href="#">
+                        <img src="img/icon/icon-fb.svg" alt="fb">
+                    </a>
+                    <a href="#">
+                        <img src="img/icon/icon-twitter.svg" alt="tw">
+                    </a>
+                    <a href="#">
+                        <img src="img/icon/icon-yt.svg" alt="yt">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#up" class="pageup">
+        <img src="img/icon/icon-up.svg" alt="up">
+    </a>
+
+   
 </body>
 </html>
