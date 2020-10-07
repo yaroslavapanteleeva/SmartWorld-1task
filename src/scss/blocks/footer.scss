@@ -1,0 +1,116 @@
+@import '../base/variables.scss';
+@import '../base/mixins.scss';
+
+.footer {
+    max-width: 1920px;
+    min-height: 490px;
+    background-color: $color-main;
+    margin: 0 auto;
+    padding: 130px 0 30px;
+    &__logo {
+        color: #ffffff;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: center;
+        &:hover {
+            text-decoration: none;
+            color: #ffffff;
+        }
+    }
+    &__widget {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__subs {
+        margin-top: 40px;
+        max-width: 555px;
+        position: relative;
+    }
+    &__input {
+        width: 555px;
+        height: 60px;
+        padding: 0 190px 0 30px;
+        border-radius: 30px;
+        border: 2px solid #ffffff;
+        background-color: $color-main;
+        &::placeholder {
+            @include text;
+            color: #ffffff;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    &_btn {
+        position: absolute;
+        right: 0;
+        width: 165px;
+        height: 60px;
+        border-radius: 0 30px 30px 0;
+        border: none;
+        background-color: #ffffff;
+        color: $color-main;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 27px;
+        text-transform: uppercase;
+        &:focus {
+            outline: none;
+        }
+        &:hover {
+            border: 2px solid #ffffff;
+            border-left: none;
+            background-color: $color-main;
+            color: #ffffff;
+        }
+    }
+    hr {
+        max-width: 1920px;
+        height: 1px;
+        margin: 130px 0 40px;
+        background-color: #ffffff;
+        border: none;
+    }
+    &__copyright {
+        @include text;
+        color: #ffffff;
+    }
+    &__link {
+        justify-self: end;
+        width: 348px;
+        display: flex;
+        justify-content: space-between;
+        a {
+            @include text;
+            color: #d8d8d8;
+            &:hover {
+                text-decoration: none;
+                color: #ffffff; 
+            }
+        }
+    }
+    &__info {
+        display: grid;
+        grid-template-columns: 2fr 1fr 78px;
+        column-gap: 118px;
+        
+    }
+    &__social-link {
+        display: flex;
+        justify-content: space-between;
+        a {
+            &:hover {
+                text-decoration: none;
+                color: #ffffff;
+            }
+        }
+        img {
+            &:hover {
+                color: #ffffff;
+            }
+        }
+    }
+}
