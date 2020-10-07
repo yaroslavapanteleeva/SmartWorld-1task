@@ -1,0 +1,24 @@
+@import '../base/variables.scss';
+
+.link {
+    padding-right: 30px;
+    color: $color-main;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27px;
+    background: url(../img/icon/link-arrow.svg) no-repeat 95% center;
+    transition: .2s all;
+    &:hover {
+        text-decoration: none;
+        color: #0063dd;
+        background: url(../img/icon/link-arrow.svg) no-repeat right center;
+    }
+    &_color {
+        color: #ffffff;
+        background-image: url(../img/icon/link-arrow-white.svg);
+        &:hover {
+            background-image: url(../img/icon/link-arrow-white.svg);
+            color: #ffffff;
+        }
+    }
+}
