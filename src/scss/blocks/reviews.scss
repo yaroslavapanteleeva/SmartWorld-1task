@@ -4,40 +4,102 @@
     min-height: 608px;
     background-color: #f5fcfd;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
     /* &__img {
         background: url('../img/bg_people.png') center center/cover no-repeat;
     } */
     &__info {
+        justify-self: end;
+        align-self: center;
         
     }
-    &__slider {
+    &__title {
+        color: #333333;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 36px;
+        margin-bottom: 44px;
+    }
+    .slider {
         width: 1040px;
+        min-height: 275px;
         position: relative;
         overflow: hidden;
-    }
-    &__item {
-        width: 360px;
-        height: 215px;
-        box-shadow: 0 0 25px rgba(165, 165, 165, 0.1);
-        border-radius: 5px;
-        background-color: black;
-        /* position: absolute;
-        left: 0;
-        top: 0;
-        transition: all ease 1s; */
-        
+        &__items {
+            width: 1140px;
+            display: -webkit-box;
+            position: absolute;
+            transition: all ease-out .3s;
+        }
+        &__item {
+            margin: 0 15px;
+            width: 360px;
+            height: 215px;
+            box-shadow: 0 0 25px rgba(165, 165, 165, 0.1);
+            border-radius: 5px;
+            background-color: #ffffff;
+            padding: 40px 30px;
+            &:nth-child(1) {
+                margin-left: 0;
+            }
+        }
+        &__item-descr {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+            grid-row: 15px;
+        }
+        &__item-title {
+            color: #333333;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 27px;
+        }
+        &__item-subtitle {
+            color: #929292;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 27px;
+        }
+        &__item-icon {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            justify-self: end;
+            span {
+                font-size: 23px;
+                color: #0f7bff;
+            }
+        }
+        &__item-text {
+            margin-top: 15px;
+            color: #929292;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 27px;
+        }
 
+        &__dots {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 90px;
+            display: flex;
+            justify-content: space-between;
+            .dot {
+                width: 20px;
+                height: 10px;
+                border-radius: 5px;
+                background-color: #d4d4d4;
+                cursor: pointer;
+            }
+            .active {
+                width: 30px;
+                height: 10px;
+                border-radius: 5px;
+                background-color: #0f7bff;
+            }
+        }
     }
-    .line {
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        column-gap: 30px;
-        height: 215px;
-        position: relative;
-        overflow: hidden;
-        left: 0;
-        right: 0;
-        transition: all ease 1s;
-    }
+    
 }

@@ -26,9 +26,7 @@
             border: 2px solid $color-main;
             color: $color-main;
         }
-        &_br {
-            border-radius: 25px 0 0 25px;
-        }
+        
 
     }
     &_right {
@@ -40,8 +38,33 @@
             background-color: $color-main;
             color: #fff;
         }
-        &_br {
+        
+    }
+    &_br {
+        border: 2px solid #0f7bff;
+        background-color: #ffffff;
+        color: #0f7bff;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 27px;
+        &:hover {
+            background-color:  #ffffff
+        }
+        &_left {
+            border-radius: 25px 0 0 25px;
+        }
+        &_right {
             border-radius: 0 25px 25px 0;
+            border-left: none;
         }
     }
+    &_active {
+        background-color: #0f7bff;
+        color: #ffffff;
+        &:hover {
+            background-color: #0f7bff;
+        }
+    }
+    
+
 }
