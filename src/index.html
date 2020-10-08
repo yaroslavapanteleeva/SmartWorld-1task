@@ -6,15 +6,15 @@
     <title>AppSon</title>
 </head>
 <body>
-    <section class="home">
-        <header class="header">
-            <a href="#" class="header__logo">AppSon</a>
+    <section class="home" id="home">
+        <header class="header" id="logo">
+            <a href="#logo" class="header__logo">AppSon</a>
             <nav>
                 <ul class="menu">
-                    <li class="menu__item"><a href="#" class="menu__link menu__link_active">Home</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Features</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Pricing</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Pages</a></li>
+                    <li class="menu__item"><a href="#home" class="menu__link menu__link_active">Home</a></li>
+                    <li class="menu__item"><a href="#features" class="menu__link">Features</a></li>
+                    <li class="menu__item"><a href="#price" class="menu__link">Pricing</a></li>
+                    <li class="menu__item"><a href="#news" class="menu__link">Pages</a></li>
                 </ul>
             </nav>
             <button class="header__btn btn">sign up</button>
@@ -28,17 +28,18 @@
                 <button class="btn btn_left">Download</button>
                 <button class="btn btn_right">Free Trial</button>
             </div>
-            <div class="home__img-device">
-                <img src="img/device.png" alt="device">
-            </div>
-            <div class="home__scroll">
-                <img src="img/icon/icon_arrow-main.svg" alt="arrow-scroll">
-            </div>
+            
         </div>
+        <div class="home__img-device">
+            <img src="img/device.png" alt="device">
+        </div>
+        <a href="#features" class="home__scroll">
+            <img src="img/icon/icon_arrow-main.svg" alt="arrow-scroll">
+        </a>
         
     </section>
 
-    <section class="features">
+    <section class="features" id="features">
         <div class="container">
             <div class="features__items">
                 <div class="features__item">
@@ -107,14 +108,8 @@
                 <a href="#" class="link">Read More</a>
             </div>
 
-
-        </div>
-            
-                
-           
-        
-        
-    </section>
+        </div>    
+    </section> 
 
     <section class="work">
         <div class="container">
@@ -155,7 +150,7 @@
         </div>
     </section>
 
-    <section class="tariff-plan">
+    <section class="tariff-plan" id="price">
         <div class="container">
             <div class="tariff-plan__wrapper">
                 <div class="tariff-plan__block-plan">
@@ -163,9 +158,9 @@
                     <p class="tariff-plan__lead-text">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
                     </p>
-                    <div class="tariff-plan__btn">
-                        <button class="btn btn_left btn_left_br">Montnly</button>
-                        <button class="btn btn_right btn_right_br">Yearly</button>
+                    <div id="tariff-plan" class="tariff-plan__btn">
+                        <button id="month" class="btn btn_br btn_br_left btn_active">Montnly</button>
+                        <button id="year" class="btn btn_br btn_br_right">Yearly</button>
                     </div>
                 </div>
                 <div class="tariff-plan__item">
@@ -183,7 +178,7 @@
                         <li>50 gb Bandwith</li>
                         <li>Free Support</li>
                     </ul>
-                    <div class="tariff-plan__prices tariff-plan__prices-standart">
+                    <div id="standart" class="tariff-plan__prices tariff-plan__prices-standart">
                         <span>$</span>19.00
                     </div>
                     <div class="tariff-plan__btn-card">
@@ -205,7 +200,7 @@
                         <li>50 gb Bandwith</li>
                         <li>Free Support</li>
                     </ul>
-                    <div class="tariff-plan__prices tariff-plan__prices-premium">
+                    <div id="premium" class="tariff-plan__prices tariff-plan__prices-premium">
                         <span>$</span>49.00
                     </div>
                     <div class="tariff-plan__btn-card">
@@ -222,18 +217,81 @@
             <img src="img/bg_people.png" alt="">
         </div>
         <div class="reviews__info">
-            <div class="reviews__slider">
-                <div class="line">
-                    <div class="reviews__item" style="background-color: red;"></div>
-                    <div class="reviews__item"></div>
-                    <div class="reviews__item"></div>
+            <div class="reviews__title">Trusted By More Than 55M Peoples</div>
+            <div class="reviews__slider slider">
+                <div class="slider__items">
+                    <div class="slider__item">
+                        <div class="slider__item-descr">
+                            <div class="slider__item-title">Raisa Moni</div>
+                            <div class="slider__item-subtitle">Envato Customer</div>
+                            <div class="slider__item-icon">
+                                <span class="icon-social-twitter"></span>
+                            </div>
+                        </div>
+                        <div class="slider__item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etamet.
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__item-descr">
+                            <div class="slider__item-title">Raisa Moni</div>
+                            <div class="slider__item-subtitle">Envato Customer</div>
+                            <div class="slider__item-icon">
+                                <span class="icon-social-twitter"></span>
+                            </div>
+                        </div>
+                        <div class="slider__item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etamet.
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__item-descr">
+                            <div class="slider__item-title">Raisa Moni</div>
+                            <div class="slider__item-subtitle">Envato Customer</div>
+                            <div class="slider__item-icon">
+                                <span class="icon-social-twitter"></span>
+                            </div>
+                        </div>
+                        <div class="slider__item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etamet.
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__item-descr">
+                            <div class="slider__item-title">Raisa Moni</div>
+                            <div class="slider__item-subtitle">Envato Customer</div>
+                            <div class="slider__item-icon">
+                                <span class="icon-social-twitter"></span>
+                            </div>
+                        </div>
+                        <div class="slider__item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etamet.
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__item-descr">
+                            <div class="slider__item-title">Raisa Moni</div>
+                            <div class="slider__item-subtitle">Envato Customer</div>
+                            <div class="slider__item-icon">
+                                <span class="icon-social-twitter"></span>
+                            </div>
+                        </div>
+                        <div class="slider__item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etamet.
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__dots">
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
                 </div>
             </div>
         </div>
         
     </section>
 
-    <section class="news">
+    <section class="news" id="news">
         <div class="container">
             <h2 class="subheading subheading_design">Latest News From Us</h2>
             <p class="news__lead-text">
@@ -307,7 +365,7 @@
 
     <footer class="footer">
         <div class="footer__widget">
-            <a href="#" class="footer__logo">AppSon</a>
+            <a href="#logo" class="footer__logo">AppSon</a>
             <div class="footer__subs">
                 <input type="email" name="email" class="footer__input" placeholder="Enter Your Email">
                 <button class="footer_btn">SUBSCRIBE</button>
