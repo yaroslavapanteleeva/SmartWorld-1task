@@ -1,20 +1,9 @@
 @import 'libs/bootstrap-reboot.min.scss';
 @import 'libs/fonts';
+@import 'libs/icon';
 
 @import 'base/variables.scss';
 @import 'base/mixins.scss';
-
-@import 'blocks/home.scss';
-@import 'blocks/header.scss';
-@import 'blocks/buttons.scss';
-@import 'blocks/heading.scss';
-@import 'blocks/features.scss';
-@import 'blocks/about.scss';
-@import 'blocks/subheading.scss';
-@import 'blocks/work.scss';
-@import 'blocks/price.scss';
-@import 'blocks/reviews';
-@import 'blocks/news';
 
 * {
     font-family: $font-main;
@@ -24,3 +13,21 @@
     max-width: 1140px;
     margin: 0 auto;
 }
+
+@import 'blocks/home.scss';
+@import 'blocks/header.scss';
+@import 'blocks/buttons.scss';
+@import 'blocks/heading.scss';
+@import 'blocks/features.scss';
+@import 'blocks/about.scss';
+@import 'blocks/subheading.scss';
+@import 'blocks/link';
+@import 'blocks/work.scss';
+@import 'blocks/tariff-plan.scss';
+@import 'blocks/reviews';
+@import 'blocks/news';
+@import 'blocks/sentence';
+@import 'blocks/footer';
+@import 'blocks/pageup.scss';
+
+@import 'base/media.scss';
