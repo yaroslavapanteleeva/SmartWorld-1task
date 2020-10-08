@@ -1,61 +1,84 @@
-/* const line = document.querySelector('.line');
-const slides = document.querySelectorAll('.reviews__item');
-const slider = document.querySelector('.reviews__slider');
+'use strict';
 
-const sliderWidth = slider.offsetWidth;
-let lineWidth = 0;
+const sliderItems = document.querySelector('.slider__items'),
+    parentSlider = document.querySelector('.slider'),
+    dotsWrap = document.getElementsByClassName('slider__dots')[0],
+    dots = document.getElementsByClassName('dot');
 
+let left = -390,
+    itemWidth = 390;
 
-const widthArr = [0];
+// start slider
+sliderItems.style.left = left + 'px';
 
-for (let i=0;i<slides.length;i++) {
-    widthArr.push(slides[i].offsetWidth);
-    lineWidth += slides[i].offsetWidth;
-}
-
-lineWidth = lineWidth + 60;
-
-line.style.width = lineWidth + 'px';
-
-console.log(widthArr);
-
-let offset = 0;
-let step = 0;
-let res = 0;
-
-console.log(lineWidth);
-console.log(sliderWidth);
-
-document.onclick = function() {
-    res = lineWidth - sliderWidth;
-
-    if (res >= 0) {
-        offset = offset+widthArr[step];
-        line.style.left = -offset+'px';
-    } else {
-        line.style.left = - (lineWidth - sliderWidth) + 'px';
-        offset = 0;
-        step = -1;
+const sliderTo = (direction) => {
+    if (direction == 'left') {
+        left -= itemWidth;
+    }
+    if (direction == 'right') {
+        left += itemWidth;
+    }
+    if (left < -880) {
+        left = 0;
+    }
+    if (left > 0) {
+        left = -880;
     }
 
-    if (step + 1 == slides.length) {
-        step = 0;
-        offset = 0;
-    } else {
-        step++;
+    for (let item of dots) {
+        item.classList.remove('active');
     }
+
     
-}; */
+    switch (left) {
+        case 0:
+            dots[0].classList.add('active');
+            break;
+        case -390:
+            dots[1].classList.add('active');
+            break;
+        case -780:
+            dots[2].classList.add('active');
+            break;
+    }
 
-const fieldClick = document.querySelector('.reviews');
-const slides = document.querySelectorAll('.reviews__item');
-let slider = [];
+    sliderItems.style.left = left + 'px';
 
-for (let i=0; i< slides.length;i++) {
+};
 
-}
+let timerId = setInterval(function(){
+    sliderTo('left');
+}, 2000);
 
-fieldClick.addEventListener('click', () => {
-    
+parentSlider.addEventListener('click', () => {
+    clearInterval(timerId);
+    sliderTo('left');
 });
 
+
+
+dotsWrap.addEventListener('click', (e) => {
+    clearInterval(timerId);
+    let target = e.target;
+
+    for (let item of dots) {
+        item.classList.remove('active');
+    }
+    if (target.classList.contains('dot')) {
+        target.classList.add('active');
+    }
+
+    switch (target) {
+        case dots[0]:
+            left = 0;
+            break;
+        case dots[1]:
+            left = -390;
+            break;
+        case dots[2]:
+            left = -780;
+            break;
+    }
+    
+    sliderItems.style.left = left + 'px';
+});
