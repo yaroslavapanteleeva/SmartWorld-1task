@@ -1,7 +1,7 @@
 {
-  "name": "templatewebpack",
+  "name": "webpack",
   "version": "1.0.0",
-  "description": "Template Webpack",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --open --config ./conf/webpack.dev.conf.js",
