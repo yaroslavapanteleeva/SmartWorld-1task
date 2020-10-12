@@ -8,6 +8,15 @@
     padding: 0 140px;
     background: url(../img/bg_wave.png) center (center/cover) no-repeat;
     background-color: #f5fcfd;
+    z-index: 9999;
+    &__img {
+        position: absolute;
+        display: block;
+        max-width: 100%;
+        height: 1040px;
+        left: 0;
+        z-index: -9999;
+    }
     &__text {
         @include text;
         width: 611px;
@@ -23,15 +32,15 @@
         justify-content: space-between;
     }
     &__img-device {
-        position: relative;
-        margin-top: 25px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
     }
     &__scroll {
         position: absolute;
         left: 50%;
+        transform: translateX(-50%);
         top: 97%;
         width: 70px;
         height: 70px;
